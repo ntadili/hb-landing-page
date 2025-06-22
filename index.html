@@ -19,6 +19,10 @@
       box-sizing: border-box;
     }
 
+    body{
+      /* overflow: hidden; */
+    }
+
     h2{
       font-size: 2.2rem;
       text-align: center;
@@ -33,7 +37,7 @@
     }
 
     body{
-      background-color: black;
+      background-color: rgb(7, 7, 7);
       color: white ;
       font-family: "MyFont";
       font-weight: 400;
@@ -54,13 +58,17 @@
       margin: 0 auto;
       width: fit-content;
       margin-top: 25px;
-      padding: 10px 19px;
+      padding: 25px 19px;
 
       border: solid #252525 1px;
       border-radius: 5px;
 
-      color: rgb(179, 179, 179);
+      color: rgb(164, 164, 164);
       font: 1.3rem;
+
+      background-color: #a3a3a332;
+      border: 1px solid black;
+      box-shadow: 3px 5px 5px #00000074;
     }
 
     .nav-links{
@@ -73,15 +81,19 @@
 
     .nav-links a{
       text-decoration: none;
-      color: #6E7179;
+      color: #ffffff;
       font-size: 1.2rem;      
     }
 
     .nav-cta{
       padding: 10px 20px;
 
-      background-color: white;
-      color: black !important;
+      background: linear-gradient(30deg, #008BF6 0%, #5ec9fe 100%);
+      border: 1px solid rgba(255, 255, 255, 0.4); /* soft glowing border */
+      box-shadow:
+        0 2px 20px rgba(0, 139, 246, 0.4),     /* outer blue glow */
+        inset 0 -4px 8px rgba(0, 0, 0, 0.2);    /* subtle inner bottom shadow */
+      color: white !important;
 
       border-radius: 5px;
     }
@@ -94,6 +106,16 @@
 
     /* ------------------------------ */
 
+    .dotted-background{
+      position: absolute;
+      width: 100%;
+      top: 0;
+      z-index: -1;
+    }
+
+    .dotted-background img{
+      width: 100%;
+    }
 
     /* HEADER */
     header{
@@ -107,6 +129,7 @@
     }
 
     .cta1-header{
+      width: fit-content;
       margin-bottom: 15px;
       font-size: 1.2rem;      
       padding: 8px 17px;
@@ -123,55 +146,70 @@
     }
 
     .video-header{
-      background-color: rgb(115, 111, 111);
       height: 500px;
       width: 1000px;
     }
 
     .cta2-header{
-      background-color: #008BF6;
-      margin-top: 49px;
+      margin-top: 109px;
       padding: 10px 20px;
       border-radius: 4px;
+
+      background: linear-gradient(30deg, #008BF6 0%, #5ec9fe 100%);
+      border: 1px solid rgba(255, 255, 255, 0.4); /* soft glowing border */
+      box-shadow:
+        0 2px 20px rgba(0, 139, 246, 0.4),     /* outer blue glow */
+        inset 0 -4px 8px rgba(0, 0, 0, 0.2);    /* subtle inner bottom shadow */
+      color: white !important;
     }
 
 
     /* SECTION 2 */
     .section-2{
       margin: 0 auto ;
-      max-width: 1000px;
-      margin-bottom: 78px;
+      max-width: 100%;
+      margin-bottom: 70px;
     }
 
     .section-2-container-excluding-h2{
       display: flex;
       justify-content: center;
       gap: 70px;
-      /* flex-wrap: wrap; */
+      flex-wrap: wrap;
 
       text-align: center;
     }
 
     .section-2-container-excluding-h2 .containers{
       margin-top: 50px;
-      width: 300px;
-      height: 300px;
-      background-color: aliceblue;
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      /* background-color: aliceblue; */
       border-radius: 4px;
     }
 
+    .containers img{
+      width: 100%;
+    }
+
     .containers div{
-      background-color: aqua;
+      /* background-color: aqua; */
       width: 80%;
       height: 200px;
       margin: 0 auto;
     }
 
     /* SECTION 3 */
+    .full3{
+      background-color: #101010;
+      padding-top: 50px;
+      padding-bottom: 60px;
+      margin-bottom: 60px;
+    }
     .section-3{
       margin: 0 auto;
       width: 900px;
-      margin-bottom: 78px;
     }
     .section-3 p{
       color: #8D8D8D;
@@ -182,53 +220,75 @@
       margin-top: 22px;
       border-radius: 4px;
       padding: 10px 20px;
-      background-color: #008BF6;
-      color: white;
+
+      background: linear-gradient(30deg, #008BF6 0%, #5ec9fe 100%);
+      border: 1px solid rgba(255, 255, 255, 0.4); /* soft glowing border */
+      box-shadow:
+        0 2px 20px rgba(0, 139, 246, 0.4),     /* outer blue glow */
+        inset 0 -4px 8px rgba(0, 0, 0, 0.2);    /* subtle inner bottom shadow */
+      color: white !important;
     }
 
     .section-3-container-excluding-h2{
       margin: 0 auto;
       margin-top: 39px;
-      background-color: #6E7179;
+      /* background-color: #6E7179; */
 
       display: flex;
       flex-direction: row;
-      gap: 154px;
+      gap: 27px 140px;
       flex-wrap: wrap;
       justify-content: center;
     }
 
     .image-containers-section3{
-      background-color: aliceblue;
-      width: 300px;
-      height: 300px;
+      /* background-color: aliceblue; */
+      width: 350px;
+      height: auto;
+    }
+
+    .image-containers-section3 img{
+      width: 100%;
     }
 
     /* SECTION 4 */
     .section-4{
-      margin-bottom: 78px;
+      margin-bottom: 90px;
     }
 
     .section-4-title-container{
       margin: 0 auto;
       max-width: 400px;
-      margin-bottom: 57px;
+      margin-bottom: 17px;
     }
 
     .section-4-container-excluding-h2{
-      margin: 0 auto;
-      width: 690px;
-      background-color: aliceblue;
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 70px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, auto);
+
+      gap: 1px;
+      margin: 0 auto;
+      width: 890px;
+      background-color: #17191B;
     }
 
     .section-4-grid-containers{
       margin: 0 auto;
-      background-color: aqua;
-      width: 300px;
-      height: 300px;
+      background-color: rgb(7, 7, 7);
+      width: 100%;
+      height: auto;
+
+      padding: 45px;
+    }
+    
+
+    .section-4-grid-containers p{
+      color: #8D8D8D;
+    }
+
+    .section-4-grid-containers img{
+      width: 100%;
     }
 
     /* SECTION 5 */
@@ -251,6 +311,177 @@
       border-radius: 12px;
     }
 
+    .section-5-flex-containers img{
+      width: 100%;
+    }
+
+
+    @media screen and (max-width: 768px) {
+      h2{
+        font-size: 1.27rem !important;
+      }
+      /* Header adjustments */
+      header {
+        padding: 50px 20px;
+      }
+
+      header h1 {
+        font-size: 2.2rem;
+        margin-bottom: 30px;
+      }
+
+      .cta1-header, .cta2-header {
+        font-size: 1rem;
+        padding: 10px 16px;
+        text-align: center;
+      }
+
+      .video-header {
+        width: 100%;
+        height: auto;
+        max-width: 95vw;
+      }
+
+      /* Section 2 layout stack */
+      .section-2-container-excluding-h2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+        padding: 0 20px;
+      }
+
+      .section-2-container-excluding-h2 .containers {
+        width: 100%;
+        max-width: 330px;
+        text-align: center;
+      }
+
+      .containers div {
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto 20px auto;
+      }
+
+      .containers img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+
+      .containers p {
+        margin-top: 0 !important;
+        font-size: 1rem;
+        line-height: 1.4;
+      }
+
+      h2 {
+        font-size: 1.8rem;
+        padding: 0 20px;
+        text-align: center;
+      }
+    }
+
+    /* HEADER MOBILES */
+    @media screen and (max-width: 768px) {
+      /* Adjust overall header layout */
+      header {
+        padding: 40px 20px;
+        text-align: center;
+      }
+
+      /* Responsive text scaling */
+      .mobile-title-div{
+        width: 110%;
+      }
+
+      header h1 {
+        font-size: 1.45rem !important;
+        line-height: 1.3;
+        margin-bottom: 20px;
+        padding: 0 10px;
+      }
+
+      /* CTA 1 adjustments */
+      .cta1-header {
+        font-size: 1rem;
+        padding: 8px 14px;
+        border-radius: 6px;
+        margin-bottom: 18px;
+      }
+
+      /* Responsive video */
+      .video-header {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        padding: 0 10px;
+      }
+
+      .video-header img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      /* CTA 2 button */
+      .cta2-header {
+        margin-top: 17px;
+        font-size: 1rem;
+        padding: 10px 20px;
+        border-radius: 8px;
+        display: inline-block;
+        width: auto;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      header h1 {
+        font-size: 1.6rem;
+      }
+
+      .cta1-header, .cta2-header {
+        font-size: 0.95rem;
+        padding: 8px 14px;
+      }
+
+      .video-header {
+        padding: 0;
+      }
+    }
+
+    /* SECTION 2 MOBILE */
+
+    @media screen and (min-width: 0px) and (max-width: 1040px) {
+      .section-2-container-excluding-h2{
+        gap: 0px;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .section-2 {
+        margin-top: 27px;
+      }
+      .section-2-container-excluding-h2 .containers { max-width: 60%; padding: 15px; margin: 0 !important;}
+      .container1 div{
+        margin-bottom: -5rem;
+      }
+      .container2 div{
+        margin-bottom: -5rem;
+      }
+      .container3 div{
+        margin-bottom: -3rem;
+      }
+
+      .section-2-container-excluding-h2 .container3{
+        margin-top: -50px !important;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .containers p { font-size: 0.9rem; }
+    }
+
+
   </style>
 </head>
 
@@ -261,7 +492,7 @@
     <div class="nav-container">
 
       <div class="logo left-logo">
-        <a href="#home"><img src="./resources/images/HB.png" alt="Left logo"></a>
+        <a href="#home"><img src="./resources/images/HB-logo.png" alt="Left logo"></a>
       </div>
 
       <ul class="nav-links">
@@ -274,13 +505,22 @@
     </div>
   </nav>
 
+  <div class="dotted-background"><img src="./resources/images/dotted-background.png" alt=""></div>
+
   <header>
 
-    <div class="cta1-header"><a href="">Escala y optimiza tu negocio</a></div>
+    <div class="cta1-header"><a href="">
+      Escala y optimiza tu negocio
+      <div style="width: 0px;">
+        <!-- <img style="width: 100%;" src="./resources/images/arrow.png" alt=""> -->
+      </div>
+    </a></div>
 
-    <h1>Programa para <br> Entrenadores y Emprendedores</h1>
+    <div class="mobile-title-div">
+      <h1>Programa para <br> Entrenadores y Emprendedores</h1>      
+    </div>
 
-    <div class="video-header"></div>
+    <div class="video-header"><img style="width: 100%;" src="./resources/images/video-background.png" alt=""></div>
 
     <div class="cta2-header"><a href="" style="color: white;">Me interesa</a></div>
   
@@ -292,20 +532,20 @@
 
     <div class="section-2-container-excluding-h2">
 
-      <div class="containers">
-        <div><img src="" alt=""></div>
-        <p>Sintiéndote perdido sin un plan claro de como escalar</p>
+      <div class="container1 containers">
+        <div><img src="./resources/images/section2.1.png" alt=""></div>
+        <p style="margin-top: -40px;">Sintiéndote perdido sin un plan claro de como escalar</p>
         <p style="color: #8D8D8D;">Llevas trabajando día y noche pero no ves los resultados que te gustarían</p>
       </div>
 
-      <div class="containers">
-        <div><img src="" alt=""></div>
-        <p>Con convertir tus visitas en dinero</p>
+      <div class="container2 containers">
+        <div><img src="./resources/images/section2.2.png" alt=""></div>
+        <p style="margin-top: -40px;">Con convertir tus visitas en dinero</p>
         <p style="color: #8D8D8D;">No sabes com</p>
       </div>
 
-      <div class="containers">
-        <div><img src="" alt=""></div>
+      <div style="margin-top: 8px;" class="container3 containers">
+        <div><img src="./resources/images/section2.3.png" alt=""></div>
         <p>No sabiendo dar un servicio de calidad</p>
         <p style="color: #8D8D8D;">Llevas trabajando día y noche pero no ves los resultados que te gustarían</p>
       </div>
@@ -314,60 +554,65 @@
     
   </section>
 
+  <div class="full3"> 
+    <section class="section-3">
 
-  <section class="section-3">
+      <h2>Descubre nuestro <br> paso a paso</h2>
+      <p style="text-align: center; margin-top: 10px;">Gana la claridad que necesitas para dar el <br> paso a vivir de tu pasión y tener libertad</p>
+      <div class="cta"><a href="" style="color: white;">Vamos</a></div>
 
-    <h2>Descubre nuestro <br> paso a paso</h2>
-    <p style="text-align: center; margin-top: 10px;">Gana la claridad que necesitas para dar el <br> paso a vivir de tu pasión y tener libertad</p>
-    <div class="cta"><a href="" style="color: white;">Vamos</a></div>
+      <div class="section-3-container-excluding-h2">
 
-    <div class="section-3-container-excluding-h2">
+        <div class="image-containers-section3"><img src="./resources/images/section3.1.png" alt=""></div>
+        <div class="image-containers-section3"><img src="./resources/images/section3.2.png" alt=""></div>
+        <div class="image-containers-section3"><img src="./resources/images/section3.3.png" alt=""></div>
 
-      <div class="image-containers-section3"><img src="" alt=""></div>
-      <div class="image-containers-section3"><img src="" alt=""></div>
-      <div class="image-containers-section3"><img src="" alt=""></div>
+      </div>
 
-    </div>
+    </section>
 
-  </section>
+  </div>
 
 
   <section class="section-4">
 
-    <div class="section-4-title-container">
-      <h2 style="text-align: center;">Dentro de EF Academy</h2>
-      <p style="text-align: center;">Explora y obtén acceso a todos nuestros sistemas, procesos, y documentos donde organizamos nuestro negocio y cómo captamos a nuevos clientes...</p>      
+    <div style="border-bottom: 1px solid #17191B;">
+      <div class="section-4-title-container">
+        <h2 style="text-align: center;">Dentro de EF Academy</h2>
+        <p style="text-align: center; color: #8D8D8D;">Explora y obtén acceso a todos nuestros sistemas, procesos, y documentos donde organizamos nuestro negocio y cómo captamos a nuevos clientes...</p>      
+      </div>      
     </div>
+
 
     <div class="section-4-container-excluding-h2">
 
       <div class="section-4-grid-containers">
         <h3>Quedadas presenciales</h3>
         <p>Explora y obtén acceso a todos nuestros sistemas, procesos, y documentos donde organizamos nuestro negocio y cómo captamos a nuevos clientes...</p>
-        <div><img src="" alt=""></div>
+        <div><img src="./resources/images/section4.1.png" alt=""></div>
       </div>
 
       <div class="section-4-grid-containers">
         <h3>+30 Horas de formación</h3>
         <p>Explora y obtén acceso a todos nuestros sistemas, procesos, y documentos donde organizamos nuestro negocio y cómo captamos a nuevos clientes...</p>
-        <div><img src="" alt=""></div>
+        <div style="margin-top: 20px;"><img src="./resources/images/section4.2.png" alt=""></div>
       </div>
 
       <div class="section-4-grid-containers">
         <h3>Dentro de HBS</h3>
         <p>Explora y obtén acceso a todos nuestros sistemas, procesos, y documentos donde organizamos nuestro negocio y cómo captamos a nuevos clientes...</p>
-        <div><img src="" alt=""></div>
+        <div><img src="./resources/images/section4.3.png" alt=""></div>
       </div>
 
       <div class="section-4-grid-containers">
         <h3>+24 Plantillas descargables</h3>
         <p>Explora y obtén acceso a todos nuestros sistemas, procesos, y documentos donde organizamos nuestro negocio y cómo captamos a nuevos clientes...</p>
-        <div><img src="" alt=""></div>
+        <div style="margin-top: 20px;"><img src="./resources/images/section4.4.png" alt=""></div>
       </div>
 
     </div>
 
-    <div class="cta" style=" background-color: white;"><a href="" style="color: black;">Acceder</a></div>
+    <div class="cta"><a href="" style="color: rgb(255, 255, 255);">Acceder</a></div>
 
   </section>
 

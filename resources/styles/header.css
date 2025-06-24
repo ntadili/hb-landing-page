@@ -80,7 +80,6 @@
     }
 
     .cta1-header{
-      width: fit-content;
       margin-bottom: 15px;
       font-size: 1.2rem;      
       padding: 8px 17px;
@@ -102,6 +101,7 @@
 
       transform: scale(1.4) !important;  /* visually bigger */
       transform-origin: center;
+      z-index: -9;
     }
 
     header h1{

@@ -2,6 +2,16 @@
   h2{
     font-size: 1.27rem !important;
   }
+
+  .dotted-background{
+    position: absolute;
+    width: 200%;
+    top: 0;
+    z-index: -1;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
   /* Header adjustments */
   header {
     padding: 50px 20px;
@@ -107,7 +117,7 @@
 
   /* CTA 2 button */
   .cta2-header {
-    margin-top: 17px;
+    margin-top: 27px;
     font-size: 1rem;
     padding: 10px 20px;
     border-radius: 8px;

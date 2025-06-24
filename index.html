@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HB</title>
+  <link rel="stylesheet" href="./resources/styles/footer.css">
   <style>
     @font-face {
       font-family: 'MyFont';
@@ -564,10 +565,117 @@
         display: block;
         margin-top: 3px;
       }
-
     }
 
+    /* SECTION 3 MOBILE */
+    @media screen and (max-width: 768px) {
+      .section-3 {
+        width: 100%;
+        padding: 0 20px;
+      }
 
+      .section-3 h2 {
+        font-size: 1.6rem;
+        text-align: center;
+        padding: 0 10px;
+      }
+
+      .section-3 p {
+        font-size: 1rem;
+        text-align: center;
+        padding: 0 10px;
+      }
+
+      .section-3-container-excluding-h2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding-top: 30px;
+      }
+
+      .image-containers-section3 {
+        width: 90%;
+        max-width: 270px;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .section-3 h2 {
+        font-size: 1.4rem;
+      }
+
+      .section-3 p {
+        font-size: 0.95rem;
+      }
+
+      .image-containers-section3 {
+        width: 100%;
+      }
+    }
+
+    .full3 {
+      background-color: #101010;
+      padding-top: 50px;
+      padding-bottom: 60px;
+      margin-bottom: 60px;
+      width: 100%;
+      overflow-x: hidden;
+    }
+
+    /* SECTION 4 MOBILE */
+    @media screen and (max-width: 768px) {
+      .section-4 {
+        padding: 0 20px;
+      }
+
+      .section-4-title-container h2 {
+        font-size: 1.6rem;
+      }
+
+      .section-4-title-container p {
+        font-size: 1rem;
+        text-align: center;
+        padding: 0 10px;
+      }
+
+      .section-4-container-excluding-h2 {
+        grid-template-columns: 1fr;
+        width: 100%;
+        padding: 0;
+      }
+
+      .section-4-grid-containers {
+        padding: 30px 20px;
+      }
+
+      .section-4-grid-containers h3 {
+        font-size: 1.2rem;
+      }
+
+      .section-4-grid-containers p {
+        font-size: 1rem;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .section-4-title-container h2 {
+        font-size: 1.4rem;
+      }
+
+      .section-4-title-container p {
+        font-size: 0.95rem;
+      }
+
+      .section-4-grid-containers h3 {
+        font-size: 1.1rem;
+      }
+
+      .section-4-grid-containers p {
+        font-size: 0.95rem;
+      }
+    }
+
+    
   </style>
 </head>
 
@@ -626,20 +734,26 @@
 
       <div class="container1 containers">
         <div><img src="./resources/images/section2.1.png" alt=""></div>
-        <p style="margin-top: -40px;">Sintiéndote perdido sin un plan claro de como escalar</p>
-        <p style="color: #8D8D8D;">Llevas trabajando día y noche pero no ves los resultados que te gustarían</p>
+        <div class="content-wrapper">
+          <p style="margin-top: -40px;">Sintiéndote perdido sin un plan claro de como escalar</p>
+          <p style="color: #8D8D8D;">Llevas trabajando día y noche pero no ves los resultados que te gustarían</p>
+        </div>
       </div>
 
       <div class="container2 containers">
         <div><img src="./resources/images/section2.2.png" alt=""></div>
-        <p style="margin-top: -40px;">Con convertir tus visitas en dinero</p>
-        <p style="color: #8D8D8D;">No sabes com</p>
+        <div class="content-wrapper">
+          <p style="margin-top: -40px;">Con convertir tus visitas en dinero</p>
+          <p style="color: #8D8D8D;">No sabes com</p>          
+        </div>
       </div>
 
       <div style="margin-top: 8px;" class="container3 containers">
         <div><img src="./resources/images/section2.3.png" alt=""></div>
-        <p>No sabiendo dar un servicio de calidad</p>
-        <p style="color: #8D8D8D;">Llevas trabajando día y noche pero no ves los resultados que te gustarían</p>
+        <div class="content-wrapper">
+          <p>No sabiendo dar un servicio de calidad</p>
+          <p style="color: #8D8D8D;">Llevas trabajando día y noche pero no ves los resultados que te gustarían</p>          
+        </div>
       </div>
 
     </div>
@@ -722,6 +836,18 @@
     </div>
 
   </section>
+
+
+
+  <!-- FOOTER -->
+    <footer>
+    <p>H Barrio Athletes, S.L | Copyright © <br>Todos los Derechos Reservados 2025</p>
+    <div>
+      <a style="text-decoration: none; color: rgb(79, 79, 79);" href="http://hbarrio.com/index.php/politica-de-privacidad/">Política de Privacidad</a>
+      <p>Aviso Legal</p>
+      <p>Política de Cookies</p>
+    </div>
+    </footer>
 
 </body>
 

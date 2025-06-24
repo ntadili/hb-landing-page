@@ -1,0 +1,116 @@
+    /* NAV BAR & HEADER*/
+    .nav-container{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 160px;
+
+
+      margin: 0 auto;
+      width: fit-content;
+      margin-top: 25px;
+      padding: 25px 19px;
+
+      border: solid #252525 1px;
+      border-radius: 5px;
+
+      color: rgb(164, 164, 164);
+      font: 1.3rem;
+
+      background-color: #a3a3a332;
+      border: 1px solid black;
+      box-shadow: 3px 5px 5px #00000074;
+    }
+
+    .nav-links{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 160px;
+      list-style: none;
+    }
+
+    .nav-links a{
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 1.2rem;      
+    }
+
+    .nav-cta{
+      padding: 10px 20px;
+
+      background: linear-gradient(30deg, #008BF6 0%, #5ec9fe 100%);
+      border: 1px solid rgba(255, 255, 255, 0.4); /* soft glowing border */
+      box-shadow:
+        0 2px 20px rgba(0, 139, 246, 0.4),     /* outer blue glow */
+        inset 0 -4px 8px rgba(0, 0, 0, 0.2);    /* subtle inner bottom shadow */
+      color: white !important;
+
+      border-radius: 5px;
+    }
+
+    /* logo nav-bar */
+    .logo img{
+      display: block;
+      width: 40px;
+    }  
+
+    /* ------------------------------ */
+
+    .dotted-background{
+      position: absolute;
+      width: 100%;
+      top: 0;
+      z-index: -1;
+    }
+
+    .dotted-background img{
+      width: 100%;
+    }
+
+    /* HEADER */
+    header{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      padding: 78px 0;
+    }
+
+    .cta1-header{
+      width: fit-content;
+      margin-bottom: 15px;
+      font-size: 1.2rem;      
+      padding: 8px 17px;
+      border: solid 1px #5d5d5d;
+      border-radius: 5px;
+    }
+    .cta1-header a{
+      color: white;
+    }
+
+    header h1{
+      font-size: 3.2rem;
+      margin-bottom: 45px;
+    }
+
+    .video-header{
+      height: 500px;
+      width: 1000px;
+    }
+
+    .cta2-header{
+      margin-top: 109px;
+      padding: 10px 20px;
+      border-radius: 4px;
+
+      background: linear-gradient(30deg, #008BF6 0%, #5ec9fe 100%);
+      border: 1px solid rgba(255, 255, 255, 0.4); /* soft glowing border */
+      box-shadow:
+        0 2px 20px rgba(0, 139, 246, 0.4),     /* outer blue glow */
+        inset 0 -4px 8px rgba(0, 0, 0, 0.2);    /* subtle inner bottom shadow */
+      color: white !important;
+    }
